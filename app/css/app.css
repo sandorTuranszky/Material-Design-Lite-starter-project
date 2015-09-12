@@ -1,0 +1,38 @@
+.material-icons.md-18 {
+  font-size: 18px; }
+.material-icons.md-24 {
+  font-size: 24px; }
+.material-icons.md-36 {
+  font-size: 36px; }
+.material-icons.md-48 {
+  font-size: 48px; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.align-top {
+  vertical-align: top; }
+
+.align-bottom {
+  vertical-align: bottom; }
+
+.align-middle {
+  vertical-align: middle; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+.clearfix:after {
+  clear: both; }

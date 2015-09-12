@@ -1,0 +1,18 @@
+{
+  "name": "Material Design Lite starter project",
+  "version": "0.1.0",
+  "description": "Material Design Lite starter project",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sandor Turanszky",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-inject": "^1.5.0",
+    "main-bower-files": "^2.9.0"
+  }
+}

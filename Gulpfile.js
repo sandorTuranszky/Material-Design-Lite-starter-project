@@ -8,7 +8,7 @@ var browserSync = require('browser-sync').create();
 var ENV = process.env.NODE_ENV || 'develop';
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['inject:index:js:css', 'inject:index:bower', 'sass'], function () {
+gulp.task('serve', ['inject:index:js:css', 'inject:index:bower', 'inject:index:vendor:js:css', 'sass'], function () {
     console.log('\nStart server ...\n');
     browserSync.init({
         server: {
@@ -23,6 +23,7 @@ gulp.task('serve', ['inject:index:js:css', 'inject:index:bower', 'sass'], functi
     gulp.watch("app/scss/**/*.scss", ['sass']);
     gulp.watch("app/**/*.{js,html,css}", ['inject:index:js:css']);
     gulp.watch("bower_components/**/*.{js,css}", ['inject:index:bower']);
+    gulp.watch("vendor/**/*.{js,css}", ['inject:index:vendor:js']);
     gulp.watch("app/**/*.html").on('change', browserSync.reload);
 });
 
@@ -53,5 +54,16 @@ gulp.task('inject:index:js:css', function () {
 gulp.task('inject:index:bower', function () {
     return gulp.src('./app/index.html')
         .pipe(inject(gulp.src(mainBowerFiles(), {read: false}), {name: 'bower'}))
+        .pipe(gulp.dest('./app'));
+});
+
+// Inject vendor files into index.html
+gulp.task('inject:index:vendor:js:css', function () {
+    return gulp.src('./app/index.html')
+        .pipe(inject(gulp.src(['vendor/**/*.js', 'vendor/**/*.css'], {read: false}), {
+            name: 'vendor',
+            ignorePath: 'app',
+            addRootSlash: false
+        }))
         .pipe(gulp.dest('./app'));
 });

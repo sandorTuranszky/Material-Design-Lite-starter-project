@@ -23,7 +23,7 @@ gulp.task('serve', ['inject:index:js:css', 'inject:index:bower', 'inject:index:v
     gulp.watch("app/scss/**/*.scss", ['sass']);
     gulp.watch("app/**/*.{js,html,css}", ['inject:index:js:css']);
     gulp.watch("bower_components/**/*.{js,css}", ['inject:index:bower']);
-    gulp.watch("vendor/**/*.{js,css}", ['inject:index:vendor:js']);
+    gulp.watch("vendor/**/*.{js,css}", ['inject:index:vendor:js:css']);
     gulp.watch("app/**/*.html").on('change', browserSync.reload);
 });
 

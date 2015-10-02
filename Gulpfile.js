@@ -14,7 +14,8 @@ gulp.task('serve', ['inject:index:js:css', 'inject:index:bower', 'sass'], functi
         server: {
             baseDir: "./app",
             routes: {
-                "/bower_components": "bower_components"
+                "/bower_components": "bower_components",
+                "/vendor": "vendor"
             }
         }
     });

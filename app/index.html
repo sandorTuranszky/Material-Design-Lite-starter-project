@@ -15,169 +15,44 @@
     <!--font-awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <!-- bower:css -->
-    <!-- endinject -->
+    <!--<link rel="stylesheet" href="vendor/material-design-lite/material.min.css">-->
+    <!--<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css" />-->
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-orange.min.css" />
 
-    <!-- vendor:css -->
-    <link rel="stylesheet" href="vendor/material-design-lite/material.min.css">
-    <!-- endinject -->
-
-    <!-- inject:css -->
-    <link rel="stylesheet" href="css/components/icons--modifiers.css">
     <link rel="stylesheet" href="css/app.css">
-    <!-- endinject -->
+    <link rel="stylesheet" href="css/components/icons--modifiers.css">
 </head>
 <body>
 
+<!-- Always shows a header, even in smaller screens. -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header mdl-layout__header--scroll">
-        <div class="mdl-layout-icon"></div>
+    <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-            <span class="mdl-layout-title">Material Design Lite</span>
-            <div class="mdl-layout-spacer mdl-layout--large-screen-only"></div>
+            <!-- Title -->
+            <span class="mdl-layout-title">Job Attractor</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation. We hide it in small screens. -->
             <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <a class="mdl-navigation__link" href="#">Hello</a>
-                <a class="mdl-navigation__link" href="#">World.</a>
-                <a class="mdl-navigation__link" href="#">How</a>
-                <a class="mdl-navigation__link" href="#">Are</a>
-                <a class="mdl-navigation__link" href="#">You?</a>
+                <a class="mdl-navigation__link" href="#">ABOUT</a>
+                <a class="mdl-navigation__link" href="#">FAQ</a>
+                <a class="mdl-navigation__link" href="#">BLOG</a>
+                <a class="mdl-navigation__link" href="#">LOGIN</a>
             </nav>
         </div>
     </header>
     <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-        <span class="mdl-layout-title">Material Design Lite</span>
+        <span class="mdl-layout-title">Title</span>
         <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="#">Hello</a>
-            <a class="mdl-navigation__link" href="#">World.</a>
-            <a class="mdl-navigation__link" href="#">How</a>
-            <a class="mdl-navigation__link" href="#">Are</a>
-            <a class="mdl-navigation__link" href="#">You?</a>
+            <a class="mdl-navigation__link" href="#">ABOUT</a>
+            <a class="mdl-navigation__link" href="#">FAQ</a>
+            <a class="mdl-navigation__link" href="#">BLOG</a>
+            <a class="mdl-navigation__link" href="#">LOGIN</a>
         </nav>
     </div>
     <main class="mdl-layout__content">
-
-        <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--12-col">
-                <h2 class="text-center">This is a Material Design Lite starter project</h2>
-            </div>
-        </div>
-
-        <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--4-col">
-                <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title mdl-card--expand">
-                        <h2 class="mdl-card__title-text">SCSS</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        Predefined SCSS structure
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                            View Updates
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="mdl-cell mdl-cell--4-col">
-                <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title mdl-card--expand">
-                        <h2 class="mdl-card__title-text">Gulp</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        Automation with Gulp
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                            View Updates
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="mdl-cell mdl-cell--4-col">
-                <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title mdl-card--expand">
-                        <h2 class="mdl-card__title-text">Icons</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        Material Design Icons & Font Awesome Icons
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                            View Updates
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Scrollable footer-->
-        <footer class="mdl-mega-footer">
-            <div class="mdl-mega-footer__top-section">
-                <div class="mdl-mega-footer__left-section">
-                    <button class="mdl-mega-footer__social-btn"><i class="fa fa-facebook-official fa-lg"></i></button>
-                    <button class="mdl-mega-footer__social-btn"><i class="fa fa-twitter-square fa-lg"></i></button>
-                </div>
-                <div class="mdl-mega-footer__right-section">
-                    <a href="#">Introduction</a>
-                    <a href="#">App Status Dashboard</a>
-                    <a href="#">Terms of Service</a>
-                </div>
-            </div>
-            <div class="mdl-mega-footer__middle-section">
-                <div class="mdl-mega-footer__drop-down-section">
-                    <h1 class="mdl-mega-footer__heading">Learning and Support</h1>
-                    <ul class="mdl-mega-footer__link-list">
-                        <li><a href="#">Resource Center</a></li>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Community</a></li>
-                        <li><a href="#">Learn with Google</a></li>
-                        <li><a href="#">Small Business Community</a></li>
-                        <li><a href="#">Think Insights</a></li>
-                    </ul>
-                </div>
-                <div class="mdl-mega-footer__drop-down-section">
-                    <h1 class="mdl-mega-footer__heading">Just for Developers</h1>
-                    <ul class="mdl-mega-footer__link-list">
-                        <li><a href="#">Google Developers</a></li>
-                        <li><a href="#">AdWords API</a></li>
-                        <li><a href="#">AdWords Scipts</a></li>
-                        <li><a href="#">AdWords Remarketing Tag</a></li>
-                    </ul>
-                </div>
-                <div class="mdl-mega-footer__right-section">
-                    <div class="mdl-logo">
-                        <img src="/assets/images/logo.png">
-                    </div>
-                </div>
-            </div>
-            <div class="mdl-mega-footer__bottom-section">
-                <ul class="mdl-mega-footer__link-list">
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Privacy and Terms</a></li>
-                </ul>
-            </div>
-        </footer>
-
-        <!--mini-->
-        <!--<footer class="mdl-mini-footer">-->
-            <!--<div class="mdl-mini-footer__left-section">-->
-                <!--<div class="mdl-logo">-->
-                    <!--<img src="/assets/images/logo.png">-->
-                <!--</div>-->
-                <!--<ul class="mdl-mini-footer__link-list">-->
-                    <!--<li><a href="">Link 1</a></li>-->
-                    <!--<li><a href="">Link 2</a></li>-->
-                    <!--<li><a href="">Link 3</a></li>-->
-                <!--</ul>-->
-            <!--</div>-->
-            <!--<div class="mdl-mini-footer__right-section">-->
-                <!--<button class="mdl-mega-footer__social-btn"><i class="fa fa-facebook-official fa-lg"></i></button>-->
-                <!--<button class="mdl-mega-footer__social-btn"><i class="fa fa-vk fa-lg"></i></button>-->
-            <!--</div>-->
-        <!--</footer>-->
-
+        <div class="page-content"><!-- Your content goes here --></div>
     </main>
-
 </div>
 
 
@@ -215,15 +90,6 @@
     };
 </script>
 
-<!-- Material Design Lite -->
-<!-- bower:js -->
-<!-- endinject -->
-
-<!-- vendor:js -->
 <script src="vendor/material-design-lite/material.min.js"></script>
-<!-- endinject -->
-
-<!-- inject:js -->
-<!-- endinject -->
 </body>
 </html>

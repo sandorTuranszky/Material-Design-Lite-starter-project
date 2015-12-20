@@ -7,6 +7,11 @@
 .material-icons.md-48 {
   font-size: 48px; }
 
+.mdl-menu--headerWrapper {
+  position: relative;
+  right: 15px;
+  margin-left: 24px; }
+
 .text-left {
   text-align: left; }
 
